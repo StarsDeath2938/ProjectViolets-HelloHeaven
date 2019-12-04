@@ -79,6 +79,19 @@ a:hover {
 
 }
 
+.Rotation-Right>div {
+    position: absolute;
+    visibility: hidden;
+
+    right: 0;
+    top: 0;
+
+    width: 540px;
+    height: 280px;
+
+    background-color: #eaeaea;
+}
+
 .Rotation-Right>ul {
     position: absolute;
     right: 5px;
@@ -112,14 +125,15 @@ a:hover {
 
 }
 
-.Rotation-Right-Hidden {
-    visibility: hidden;
 
-    position: absolute;
+.Rotation-Right-Hidden {
+
     right: 0;
     top: 0;
 
     width: 540px;
     height: 280px;
+
+    background-color: #eaeaea;
 
 }

@@ -11,6 +11,7 @@
 }
 
 .top-nav-list {
+    position: fixed;
     top: 0;
     left: 0;
 
@@ -22,8 +23,6 @@
 
 .top-nav-list-hidden {
     position: fixed;
-    
-    transition: all 1s;
 }
 
 .top-nav-list>ul {

@@ -1,3 +1,10 @@
-$(document).ready(function () {
-    $("#Rotation-Display").children("div").addClass("Rotation-Right-Hidden")
+$(function () {
+
+    $("#Rotation-1").hover(function () {
+        $(".Rotation-01").css({
+            "visibility": "visible"
+
+        });
+    });
+
 });
