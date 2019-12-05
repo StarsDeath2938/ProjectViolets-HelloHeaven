@@ -41,6 +41,7 @@ a:hover {
     height: 100%;
 
     padding: 20px 0;
+    border: 1px solid #4b4b4b;
 
     background-color: #8b8b8b;
 }
@@ -75,21 +76,10 @@ a:hover {
     width: 540px;
     height: 100%;
 
-    background-color: #6b6b6b;
+    background-color: #4b4b4b;
 
-}
+    transition: all 1s;
 
-.Rotation-Right>div {
-    position: absolute;
-    visibility: hidden;
-
-    right: 0;
-    top: 0;
-
-    width: 540px;
-    height: 280px;
-
-    background-color: #eaeaea;
 }
 
 .Rotation-Right>ul {
@@ -113,18 +103,30 @@ a:hover {
 
     margin-right: 10px;
 
-    border: 1px solid #6b6b6b;
     border-radius: 50%;
 
+    transition: all 1s;
+}
+
+.Rotation-Right>ul>li:nth-child(1) {
+    background-color: #4b4b4b;
+}
+
+.Rotation-Right>ul>li:nth-child(2) {
+    background-color: #6b6b6b;
+}
+
+.Rotation-Right>ul>li:nth-child(3) {
+    background-color: #8b8b8b;
+}
+
+.Rotation-Right>ul>li:nth-child(4) {
     background-color: #afafaf;
 }
 
-.Rotation-Right>ul>li:hover {
-    border: 1px solid #afafaf;
-    background-color: #8b8b8b;
-
+.Rotation-Right>ul>li:nth-child(5) {
+    background-color: #cdcdcd;
 }
-
 
 .Rotation-Right-Hidden {
 
