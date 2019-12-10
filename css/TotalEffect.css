@@ -1,0 +1,148 @@
+.global-background {
+    position: relative;
+
+    width: 100%;
+
+    background-image: linear-gradient(to bottom,#7A67EE,#8968CD);
+
+    overflow: hidden;
+}
+
+/* ---background-style--- */
+
+.global-background>div {
+    position: absolute;
+
+    left: 0px;
+    bottom: -100px;
+
+    background-color: rgba(171,130,255,0.3);
+
+}
+
+/* ---particular style--- */
+
+#particular01 {
+    width: 30px;
+    height: 30px;
+    left: 20px;
+
+    animation:part01 15s infinite;
+    animation-timing-function:linear;
+    animation-delay:2s;
+}
+
+@keyframes part01 
+{
+    from {
+        transform: rotate(0deg);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(1080deg);
+        bottom: 1100px;
+    }
+}
+
+/* ---01--- */
+
+#particular02 {
+    width: 25px;
+    height: 25px;
+    left: 140px;
+
+    animation:part02 12s infinite;
+    animation-timing-function:linear;
+    animation-delay:1s;
+}
+
+@keyframes part02 
+{
+    from {
+        transform: rotate(0deg);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(1800deg);
+        bottom: 1100px;
+    }
+}
+
+/* ---02--- */
+
+#particular03 {
+    width: 40px;
+    height: 40px;
+    left: 250px;
+
+    animation:part03 18s infinite;
+    animation-timing-function:linear;
+    animation-delay:3s;
+}
+
+@keyframes part03 
+{
+    from {
+        transform: rotate(0deg);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(960deg);
+        bottom: 1100px;
+    }
+}
+
+/* ---03--- */
+
+#particular04 {
+    width: 60px;
+    height: 60px;
+    left: 450px;
+
+    transform:translate(500px,200px);
+    animation:part04 20s infinite;
+    animation-timing-function:linear;
+    animation-delay:5s;
+}
+
+@keyframes part04 
+{
+    from {
+        transform: rotate(0deg);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(1080deg);
+        bottom: 1100px;
+    }
+}
+
+/* ---04--- */
+
+#particular05 {
+    width: 45px;
+    height: 45px;
+    left: 580px;
+
+    transform:translate(500px,200px);
+    animation:part05 16s infinite;
+    animation-timing-function:linear;
+    animation-delay:3s;
+}
+
+@keyframes part05 
+{
+    from {
+        transform: rotate(0deg);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(1080deg);
+        bottom: 1100px;
+    }
+}
