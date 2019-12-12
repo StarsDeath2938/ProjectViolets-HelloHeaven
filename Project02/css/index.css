@@ -24,18 +24,23 @@ body {
     position: relative;
     /* background-color: #afafaf; */
 
-    transform: rotateX(60deg) rotateZ(180deg);
+    transform: rotateX(60deg) rotateZ(0deg);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
 .main-box>div {
+    float: left;
     position: absolute;
     background-color: rgba(175, 175, 175, 0.2);
 }
 
 .main-box>.main-bottom{
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-bottom {
+    box-shadow: 0px 0px 20px rgba(40, 40, 40, 0.2);
 }
 
 .main-top,.main-bottom,.main-front,.main-back {
@@ -70,4 +75,41 @@ body {
 
 .main-right {
     transform: rotateY(90deg) translateZ(-40px);
+}
+
+.flux-loading {
+    float: left;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(123, 108, 238, 0.7);
+
+    animation-name: fluxLoading;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+
+}
+
+.flux-loading-right {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(123, 108, 238, 0.7);
+}
+
+.flux-loading,.flux-loading-right {
+    box-shadow: 0px 0px 100px 10px rgba(123, 108, 238, 0.3);
+
+    transition: all 0.3s;
+}
+
+@keyframes fluxLoading {
+    0% {
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+
 }
