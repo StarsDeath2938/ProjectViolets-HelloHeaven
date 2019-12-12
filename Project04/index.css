@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+
+}
+
+.main-box {
+    position: relative;
+
+    width: 60px;
+    height: 34px;
+
+    margin: 200px auto;
+
+}
+
+.item {
+    position: absolute;
+
+    width: 30px;
+    height: 17px;
+
+    top: 0;
+    left: 0px;
+
+    background-color: blueviolet;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+}
+
+#item01 {
+    animation-name: pulseItem01;
+    -webkit-animation-name: pulseItem01;
+
+}
+
+#item02 {
+    animation-name: pulseItem02;
+    -webkit-animation-name: pulseItem02;
+}
+
+#item03 {
+    animation-name: pulseItem03;
+    -webkit-animation-name: pulseItem03;
+}
+
+@keyframes pulseItem01 {
+    0% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.01);
+        -webkit-transform: scale(0.01);
+    }
+
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes pulseItem02 {
+    0% {
+        transform: scale(1) rotate(60deg);
+        -webkit-transform: scale(1) rotate(60deg);
+    }
+
+    50% {
+        transform: scale(0.01) rotate(60deg);
+        -webkit-transform: scale(0.01) rotate(60deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(60deg);
+        -webkit-transform: scale(1) rotate(60deg);
+    }
+}
+
+@keyframes pulseItem03 {
+    0% {
+        transform: scale(1) rotate(-60deg);
+        -webkit-transform: scale(1) rotate(-60deg);
+    }
+
+    50% {
+        transform: scale(0.01) rotate(-60deg);
+        -webkit-transform: scale(0.01) rotate(-60deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(-60deg);
+        -webkit-transform: scale(1) rotate(-60deg);
+    }
+}
