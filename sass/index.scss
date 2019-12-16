@@ -1,0 +1,65 @@
+@import "_color";
+
+@mixin clearfix {
+    &::before,&::after {
+        content:"";
+        display: block;
+    }
+
+    &::after {
+        clear: both;
+    }
+
+    & {
+        zoom: 1;
+    }
+}
+
+
+// .outer {
+//     color: $black;
+
+//     >.inner {
+//         color: $gray;
+//     }
+
+//     &:hover {
+//         color: $gray;
+//     }
+
+// }
+
+@mixin clear ($play:block,$none:"") {
+    content: $none;
+    display: $play;
+}
+
+.outer {
+    & ~ {
+        width: 50px;
+        color: $black;
+    } 
+
+    // ~ {
+    //     width: 100px;
+    // }
+
+    @include clearfix;
+
+    .inner {
+        width: 100%;
+
+        > {
+            height: 50px;
+
+        }
+
+        + {
+            width: 50px;
+        }
+
+        @include clear(block, none)
+
+
+    }
+}

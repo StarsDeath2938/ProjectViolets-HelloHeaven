@@ -1,0 +1,1 @@
+.outer ~{width:50px;color:#4B4B4B}.outer::before,.outer::after{content:"";display:block}.outer::after{clear:both}.outer{zoom:1}.outer .inner{width:100%;content:none;display:block}.outer .inner>{height:50px}.outer .inner+{width:50px}
