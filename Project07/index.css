@@ -17,6 +17,8 @@ header {
 }
 
 .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 80%;
   height: 100%;
@@ -25,7 +27,8 @@ header {
 
 .header-inner * {
   float: left;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header-inner input:focus {
@@ -33,7 +36,9 @@ header {
 }
 
 .header-inner div.logo {
-  flex: 2;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   line-height: 40px;
   text-align: center;
   font-size: 18px;
@@ -42,7 +47,9 @@ header {
 }
 
 .header-inner input.nav-input {
-  flex: 5;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
   padding: 0;
   border: 2px solid #afafdc;
   border-radius: 20px;
@@ -51,7 +58,9 @@ header {
 }
 
 .header-inner input.nav-login {
-  flex: 3;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
   border: none;
   background-color: lightsteelblue;
 }
@@ -64,3 +73,4 @@ footer {
   height: 40px;
   background-color: lightsteelblue;
 }
+/*# sourceMappingURL=index.css.map */
