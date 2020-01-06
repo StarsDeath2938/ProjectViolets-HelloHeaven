@@ -1,3 +1,8 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
 .global-background {
     position: relative;
 
@@ -12,24 +17,24 @@
 
 .global-background>div {
     position: absolute;
-
+    width: 30px;
+    height: 30px;
     left: 0px;
     bottom: -100px;
 
-    background-color: rgba(171,130,255,0.3);
-
+    background-color: rgba(171,130,255,0.4);
 }
 
 /* ---particular style--- */
 
-#particular01 {
-    width: 30px;
-    height: 30px;
-    left: 20px;
+/* --- 01 --- */
 
-    animation:part01 15s infinite;
+#particular01 {
+    left: 5%;
+
+    animation:part01 5s infinite;
     animation-timing-function:linear;
-    animation-delay:2s;
+    animation-delay:1s;
 }
 
 @keyframes part01 
@@ -41,108 +46,213 @@
 
     to {
         transform: rotate(1080deg);
-        bottom: 1100px;
+        bottom: 100%;
     }
 }
 
-/* ---01--- */
+/* --- 02 --- */
 
 #particular02 {
-    width: 25px;
-    height: 25px;
-    left: 140px;
+    left: 15%;
 
-    animation:part02 12s infinite;
+    animation:part02 8s infinite;
+    animation-timing-function:linear;
+    animation-delay:2s;
+}
+
+@keyframes part02
+{
+    from {
+        transform: rotate(0deg) scale(1.5,1.5);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(720deg) scale(1.5,1.5);
+        bottom: 100%;
+    }
+}
+
+/* --- 03 --- */
+
+#particular03 {
+    left: 25%;
+
+    animation:part03 6s infinite;
     animation-timing-function:linear;
     animation-delay:1s;
 }
 
-@keyframes part02 
+@keyframes part03
 {
     from {
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(1.2,1.2);
         bottom: -100px;
     }
 
     to {
-        transform: rotate(1800deg);
-        bottom: 1100px;
+        transform: rotate(1080deg) scale(1.2,1.2);
+        bottom: 100%;
     }
 }
 
-/* ---02--- */
-
-#particular03 {
-    width: 40px;
-    height: 40px;
-    left: 250px;
-
-    animation:part03 18s infinite;
-    animation-timing-function:linear;
-    animation-delay:3s;
-}
-
-@keyframes part03 
-{
-    from {
-        transform: rotate(0deg);
-        bottom: -100px;
-    }
-
-    to {
-        transform: rotate(960deg);
-        bottom: 1100px;
-    }
-}
-
-/* ---03--- */
+/* --- 04 --- */
 
 #particular04 {
-    width: 60px;
-    height: 60px;
-    left: 450px;
+    left: 35%;
 
-    transform:translate(500px,200px);
-    animation:part04 20s infinite;
+    animation:part04 5s infinite;
     animation-timing-function:linear;
-    animation-delay:5s;
+    animation-delay:1.5s;
 }
 
-@keyframes part04 
+@keyframes part04
 {
     from {
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(0.9,0.9);
         bottom: -100px;
     }
 
     to {
-        transform: rotate(1080deg);
-        bottom: 1100px;
+        transform: rotate(720deg) scale(0.9,0.9);
+        bottom: 100%;
     }
 }
 
-/* ---04--- */
+/* --- 05 --- */
 
 #particular05 {
-    width: 45px;
-    height: 45px;
-    left: 580px;
+    left: 45%;
 
-    transform:translate(500px,200px);
-    animation:part05 16s infinite;
+    animation:part05 6s infinite;
     animation-timing-function:linear;
-    animation-delay:3s;
+    animation-delay:0.5s;
 }
 
-@keyframes part05 
+@keyframes part05
 {
     from {
-        transform: rotate(0deg);
+        transform: rotate(0deg) scale(1.1,1.1);
         bottom: -100px;
     }
 
     to {
-        transform: rotate(1080deg);
-        bottom: 1100px;
+        transform: rotate(1080deg) scale(1.1,1.1);
+        bottom: 100%;
+    }
+}
+
+/* --- 06 --- */
+
+#particular06 {
+    left: 55%;
+
+    animation:part06 7s infinite;
+    animation-timing-function:linear;
+    animation-delay:2.5s;
+}
+
+@keyframes part06
+{
+    from {
+        transform: rotate(0deg) scale(1.3,1.3);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(960deg) scale(1.3,1.3);
+        bottom: 100%;
+    }
+}
+
+/* --- 07 --- */
+
+#particular07 {
+    left: 65%;
+
+    animation:part07 6s infinite;
+    animation-timing-function:linear;
+    animation-delay:1.5s;
+}
+
+@keyframes part07
+{
+    from {
+        transform: rotate(0deg) scale(1.6,1.6);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(720deg) scale(1.6,1.6);
+        bottom: 100%;
+    }
+}
+
+/* --- 08 --- */
+
+#particular08 {
+    left: 75%;
+
+    animation:part08 5s infinite;
+    animation-timing-function:linear;
+    animation-delay:1s;
+}
+
+@keyframes part08
+{
+    from {
+        transform: rotate(0deg) scale(1.2,1.2);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(960deg) scale(1.2,1.2);
+        bottom: 100%;
+    }
+}
+
+/* --- 09 --- */
+
+#particular09 {
+    left: 85%;
+
+    animation:part09 7s infinite;
+    animation-timing-function:linear;
+    animation-delay:1.5s;
+}
+
+@keyframes part09
+{
+    from {
+        transform: rotate(0deg) scale(0.8,0.8);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(1080deg) scale(0.8,0.8);
+        bottom: 100%;
+    }
+}
+
+/* --- 10 --- */
+
+#particular10 {
+    left: 95%;
+
+    animation:part10 6s infinite;
+    animation-timing-function:linear;
+    animation-delay:1.5s;
+}
+
+@keyframes part10
+{
+    from {
+        transform: rotate(0deg) scale(1.4,1.4);
+        bottom: -100px;
+    }
+
+    to {
+        transform: rotate(720deg) scale(1.4,1.4);
+        bottom: 100%;
     }
 }
