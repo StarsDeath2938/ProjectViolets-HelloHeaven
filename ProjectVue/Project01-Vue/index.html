@@ -8,19 +8,60 @@
     <title>Document</title>
 
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <style>
+        .class01 {
+            background-color: cornflowerblue;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <div id="test">{{ HelloWorld }}</div>
+    <div id="test">
+
+        <!-- <div>{{ HelloWorld }}</div>
+        <div v-html="content"></div> -->
+
+        <!-- <label for="c1">TestColor</label>
+        <input type="checkbox" v-model="test" id="c1">
+        <div v-bind:class="{'class01':test}">HelloWorld</div> -->
+
+        <!-- <div>
+            {{ 1+2*3-4/5 }}
+            <hr>
+            {{ test ? 'Yes':'No' }}
+            <hr>
+            {{ text.split('').reverse().join('') }}
+        </div> -->
+
+        <!-- <label for="c1">Visible</label>
+        <input type="checkbox" v-model="test" id="c1">
+        <div v-if='test'> {{ text }} </div> -->
+
+        <input type="text" name="hello" v-model="text">
+        <p>{{ text }}</p>
+
+    </div>
+
 
     <script>
 
         new Vue(
             {
                 el: "#test",
+
                 data: {
-                    HelloWorld: "HelloWorld!"
+
+                    // HelloWorld: "HelloWorld!",
+                    // content: "<h1>Hello!</h1>"
+
+                    // ---
+
+                    // test: true,
+                    text: 'VioletBlessing'
+
                 }
             }
         )
