@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+</head>
+
+<body>
+
+    <div id="vue">
+
+        KM: <input type="text" v-model="kilometer">
+        M: <input type="text" v-model="meter">
+
+    </div>
+
+
+    <script>
+
+        let vm = new Vue({
+            el: '#vue',
+            data: {
+                kilometer: 0,
+                meter: 0
+            },
+            methods: {
+
+            },
+            computed: {
+
+            },
+            watch: {
+                kilometer: function (val) {
+                    this.kilometer = val;
+                    this.meter = val * 1000;
+                },
+
+                meter: function (val) {
+                    this.kilometer = val / 1000;
+                    this.meter = val;
+                }
+            }
+        });
+
+        // vm.$watch('kilometer', function (newValue, oldValue) {
+
+        // });
+
+    </script>
+
+</body>
+
+</html>
